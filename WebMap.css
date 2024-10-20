@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 1000vh; 
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+.container {
+  display: flex; /* Utilise le flexbox pour disposer la carte et les informations côte à côte */
+  position: fixed; /* Fixe le conteneur à l'écran */
+  top: 20px; /* Positionne le conteneur à 20px du haut */
+  left: 20px; /* Positionne le conteneur à 20px de gauche */
+  z-index: 1;
+  color : white; /* Assure que le conteneur est au-dessus d'autres éléments */
+}
+
+#map {
+  height: 680px; /* La carte occupe toute la hauteur définie */
+  width: 900px; /* La carte occupe toute la largeur définie */
+  border-radius: 10px; /* Ajoute un rayon de 20px pour arrondir les coins */
+  border: 1px solid rgb(20, 20, 20); /* Ajoute une bordure noire de 3px */
+}
+
+.info {
+  margin-left: 20px; /* Espace entre la carte et le texte */
+  max-width: 450px; /* Limite la largeur du texte */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+#location-title {
+  color : #0000ff;
+  font-size: larger ;  
+  font-family: "Inter", "DM Sans", Arial, sans-serif ; 
+}
+#location-description {
+  color : #f4f4f4;
+  font-size: larger ;  
+  font-family: "Inter", "DM Sans", Arial, sans-serif ; 
+}
+#redirect-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #604e4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#redirect-button:hover {
+  background-color: #000000;
+}
+
+.highlight-university {
+  color: #8640ff; /* Blue for 'Universite' */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.highlight-description {
+  color: #e54cff; /* Purple for 'Description' */
+  font-family: Georgia, serif;
+  font-style: italic;
+}
