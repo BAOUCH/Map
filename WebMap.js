@@ -4,9 +4,8 @@ const map = L.map('map', {
 }).setView([31.7917, -7.0926], 5); // Position initiale
 
 // Ajout d'une couche de carte
-// Ajout d'une couche de carte
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
+    maxZoom: 20,
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
